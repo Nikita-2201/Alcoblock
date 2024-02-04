@@ -1,0 +1,51 @@
+/* CSS */
+@font-face {
+    src: url("Inter-Medium.ttf");
+}
+
+.button-30 {
+    -fx-alignment: center;
+    -fx-text-fill: #acacac;
+    -fx-background-color: #111315;
+    -fx-background-radius: 20px;
+    -fx-border-width: 0;
+    -fx-font-smoothing-type: gray;
+    -fx-font-family: "Inter Medium";
+    -fx-text-alignment: left;
+    -fx-font-size: 28px;
+    -fx-skin: "ru.gknsv.animations.LightButtonSkin";
+}
+
+
+.mytoggle {
+    -fx-alignment: center;
+    -fx-text-fill: #acacac;
+    -fx-background-color: #111315;
+    -fx-border-width: 0;
+    -fx-font-smoothing-type: gray;
+    -fx-font-family: "Inter Medium";
+    -fx-text-alignment: left;
+    -fx-background-radius: 15px;
+    -fx-font-size: 20px;
+}
+
+.mytoggle:selected {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #2d2d2d;
+}
+
+.button-20 {
+    -fx-background-radius: 15px;
+    -fx-font-size: 20px;
+}
+
+.button-10 {
+    -fx-background-radius: 15px;
+    -fx-font-size: 15px;
+}
+
+.button-5 {
+    -fx-background-radius: 8px;
+    -fx-font-size: 15px;
+}
+

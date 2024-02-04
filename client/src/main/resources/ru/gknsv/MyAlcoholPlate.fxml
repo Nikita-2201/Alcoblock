@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #2d2d2d; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gknsv.controllers.MyAlcoholPlate">
+   <children>
+      <Label fx:id="alcoholName" styleClass="anotherWhite" stylesheets="@Fonts.css" text="Label">
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="alcoholStrength" styleClass="microAnother" stylesheets="@Fonts.css" text="Label">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </Label>
+      <HBox prefHeight="53.0" prefWidth="120.0">
+         <children>
+            <AnchorPane prefHeight="46.0" prefWidth="67.0">
+               <children>
+                  <Button layoutX="10.0" layoutY="21.0" mnemonicParsing="false" onAction="#addAlco" prefHeight="16.0" prefWidth="19.0" stylesheets="@Buttons.css" text="+">
+                     <styleClass>
+                        <String fx:value="button-30" />
+                        <String fx:value="button-5" />
+                     </styleClass>
+                  </Button>
+                  <Button layoutX="46.0" layoutY="21.0" mnemonicParsing="false" onAction="#deleteMyAlco" stylesheets="@Buttons.css" text="🗑">
+                     <styleClass>
+                        <String fx:value="button-30" />
+                        <String fx:value="button-5" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" prefWidth="66.0">
+               <children>
+                  <ImageView fx:id="image" fitHeight="36.0" fitWidth="36.0" layoutX="2.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #2d2d2d; -fx-background-radius: 25;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gknsv.controllers.HistoryDice">
+   <children>
+      <Label fx:id="dateLabel" styleClass="sample" stylesheets="@Fonts.css" text="Label" />
+      <Label fx:id="yearLabel" styleClass="sample" stylesheets="@Fonts.css" text="Label" />
+   </children>
+</VBox>

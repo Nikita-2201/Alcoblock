@@ -1,0 +1,18 @@
+
+.backColor {
+    -fx-background-color: #111315;
+}
+
+.backColorScroll {
+    -fx-background-color:transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.backColorScroll .viewport {
+    -fx-background-color:transparent;
+}
+
+.backColorGray {
+    -fx-background-color: #292c2d;
+}

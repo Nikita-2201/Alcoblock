@@ -1,0 +1,36 @@
+/* CSS */
+@font-face {
+    src: url("Inter-Medium.ttf");
+}
+
+.mytoggle {
+    -fx-alignment: center;
+    -fx-text-fill: #acacac;
+    -fx-background-color: #111315;
+    -fx-border-width: 0;
+    -fx-font-smoothing-type: gray;
+    -fx-font-family: "Inter Medium";
+    -fx-text-alignment: left;
+    -fx-background-radius: 15px;
+    -fx-font-size: 20px;
+}
+
+.mytoggle:selected {
+    -fx-alignment: center;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 15px;
+    -fx-border-width: 0;
+    -fx-font-smoothing-type: gray;
+    -fx-font-family: "Inter Medium";
+    -fx-text-alignment: left;
+    -fx-font-size: 20px;
+}
+
+.mytoggle-mini {
+    -fx-font-size: 15px;
+}
+
+.mytoggle-mini:selected {
+    -fx-font-size: 15px;
+}

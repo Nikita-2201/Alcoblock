@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=alcoblock
+    image: postgres:14.3-alpine
+  
+  server:
+     build:
+       dockerfile: Dockerfile.server
+     container_name: server
+     ports:
+       - 8085:8085
+     depends_on:
+       - postgres
+
+  client:
+     build:
+       dockerfile: Dockerfile.client
+     container_name: client

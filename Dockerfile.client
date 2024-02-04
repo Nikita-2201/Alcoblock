@@ -1,0 +1,29 @@
+#FROM openjdk:17
+#VOLUME /tmp
+##EXPOSE 8085
+#ARG JAR_FILE=client/target/client-0.0.1-SNAPSHOT.jar
+#ADD ${JAR_FILE} client.jar
+#ENTRYPOINT ["java","-jar","client.jar"]
+
+#FROM openjdk:17
+#ARG JAR_FILE=client/target/client-0.0.1-SNAPSHOT.jar
+#WORKDIR /app
+#COPY ${JAR_FILE} client.jar
+#CMD ["java", "-cp", "client.jar", "ru.gknsv.ClientApplication"]
+#CMD ["java", "--add-modules", "javafx.controls", "-cp", "/app/myapp.jar", "ru.gknsv.ClientApplication"]
+
+
+
+#FROM openjfx/panama-11:17
+#FROM adoptopenjdk/openjdk11:latest
+#
+#WORKDIR /app
+#
+## Копирование jar-файла и зависимостей в контейнер
+#COPY client/target/client-0.0.1-SNAPSHOT.jar /app/client-0.0.1-SNAPSHOT.jar
+#
+## Установка переменной окружения DISPLAY
+#ENV DISPLAY :0
+#
+## Запуск приложения
+#CMD ["java", "-cp", "client-0.0.1-SNAPSHOT.jar:lib/*", "ru.gknsv.ClientApplication"]

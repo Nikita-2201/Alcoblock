@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="420.0" style="-fx-background-color: #c9caee; -fx-background-radius: 15;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.gknsv.controllers.DrinkDice">
+   <children>
+      <VBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="162.0">
+         <children>
+            <Label fx:id="alcoTitle" styleClass="blackLabel" stylesheets="@Fonts.css" text="Label">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="alcoStrength" styleClass="blackAnother" stylesheets="@Fonts.css" text="Label">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Pane prefHeight="50.0" prefWidth="306.0">
+         <children>
+            <TextField fx:id="alcoVolume" layoutX="6.0" layoutY="12.0" promptText="Объем, мл" styleClass="smaller" stylesheets="@TextFields.css" />
+            <Button fx:id="addButton" layoutX="209.0" layoutY="11.0" mnemonicParsing="false" onAction="#addToHistory" prefHeight="20.0" prefWidth="23.0" stylesheets="@Buttons.css" text="+">
+               <styleClass>
+                  <String fx:value="button-30" />
+                  <String fx:value="button-5" />
+               </styleClass>
+            </Button>
+            <Button fx:id="deleteButton" layoutX="247.0" layoutY="11.0" mnemonicParsing="false" onAction="#deleteIntake" prefHeight="11.0" prefWidth="23.0" stylesheets="@Buttons.css" text="-">
+               <styleClass>
+                  <String fx:value="button-30" />
+                  <String fx:value="button-5" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</HBox>
